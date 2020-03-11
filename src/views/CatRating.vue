@@ -1,5 +1,10 @@
 <template>
-    <cat-ratings />
+    <div>
+        <div class="header mb-3">
+            Rate My Cat
+        </div>
+        <cat-ratings />
+    </div>
 </template>
 
 <script>

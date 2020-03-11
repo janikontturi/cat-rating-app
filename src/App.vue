@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link :to="{name: 'cat-rating'}">Cat Ratings</router-link>
+      <router-link :to="{name: 'cat-rating'}">Cat Ratings</router-link> |
+      <router-link :to="{name: 'rated-cats'}">Rated Cats</router-link>
     </div>
     <transition name="fade" mode="out-in" appear>
       <router-view/>
