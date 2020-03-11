@@ -10,7 +10,7 @@
     components: { LikedCat },
     computed: {
       ratedCats () {
-        return this.$store.getters['GET_RATED_CATS']
+        return this.$store.getters['GET_LIKED_CATS']
       }
     },
   }

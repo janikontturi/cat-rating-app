@@ -5,11 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    ratedCats: []
+    likedCats: []
   },
   mutations: {
     addCat (state, payload) {
-      state.ratedCats.push(payload)
+      state.likedCats.push(payload)
     }
   },
   actions: {
@@ -18,7 +18,7 @@ export default new Vuex.Store({
     }
   },
   getters: {
-    GET_RATED_CATS: state => state.ratedCats
+    GET_LIKED_CATS: state => state.likedCats
   },
   modules: {
   }

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import CatRating from "../views/CatRating";
-import RatedCats from "../views/RatedCats";
+import LikedCats from "../views/LikedCats";
 
 Vue.use(VueRouter);
 
@@ -20,7 +20,7 @@ const routes = [
   {
     path: '/rated-cats',
     name: 'rated-cats',
-    component: RatedCats
+    component: LikedCats
   },
 ];
 

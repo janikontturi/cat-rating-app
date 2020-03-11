@@ -5,8 +5,8 @@
             <button class="cat-button btn bg-green-500 text-white font-bold p-2" :disabled="imageLoading" @click="liked()">Cool!</button>
         </div>
         <div class="my-5">
-            <div v-if="rateCount > 0">
-                Olet arvioinut yhteensä {{rateCount}} kissakuvaa, joista {{ratedCats.length}} on ollut sellaisia joista olet pitänyt.
+            <div v-if="this.likedCats.length > 0">
+                Olet arvioinut yhteensä {{rateCount}} kissakuvaa, joista {{likedCats.length}} on ollut sellaisia joista olet pitänyt.
             </div>
             <div v-else>
                 Et ole arvioinut vielä yhtään kissakuvaa.
@@ -39,8 +39,8 @@
       this.getCat()
     },
     computed: {
-      ratedCats () {
-        return this.$store.getters['GET_RATED_CATS']
+      likedCats () {
+        return this.$store.getters['GET_LIKED_CATS']
       }
     },
     methods: {
